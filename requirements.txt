@@ -1,0 +1,3 @@
+flask
+python-dotenv
+groq  # Ensure this library is available and correctly installed
