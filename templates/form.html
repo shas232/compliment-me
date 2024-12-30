@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compliment Me</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Body Styling */
+        body {
+            background-color: #FFF0F5; /* Lavender Blush */
+            color: #708090; /* Slate Gray */
+        }
+
+        /* Input Fields */
+        .input-field {
+            background-color: #fce8d5; /* Peach Puff */
+            color: #2F4F4F; /* Dark Slate Gray */
+            border: 2px solid #e7f3f3; /* Pale Turquoise */
+            padding: 8px;
+            border-radius: 5px;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .input-field:focus {
+            border-color: #2F4F4F; /* Dark Slate Gray */
+            outline: none; /* Remove default outline */
+            box-shadow: 0 0 5px rgba(47, 79, 79, 0.5); /* Optional: Add a subtle shadow */
+        }
+
+        /* Buttons */
+        .button {
+            background-color: #fce8d5; /* Peach Puff */
+            color: #2F4F4F; /* Dark Slate Gray */
+            border: none;
+            cursor: pointer;
+            opacity: 0.9;
+            transition: opacity 0.3s ease;
+            padding: 12px; /* Adjusted for better spacing */
+            border-radius: 5px; /* Consistent with input fields */
+            font-size: 16px; /* Enhanced readability */
+        }
+
+        .button:hover {
+            opacity: 1; /* Corrected opacity value */
+        }
+
+        /* Footer Styling */
+        footer {
+            /* No additional styles needed as per user request */
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center h-screen">
+    <div class="w-full max-w-lg p-5">
+        <h1 class="text-3xl font-bold mb-6 text-center">compliment me 🥹</h1>
+        <form action="#" method="POST">
+            <div class="mb-4">
+                <input type="text" name="name" placeholder="name" class="input-field w-full p-2 rounded">
+            </div>
+            <div class="mb-4">
+                <input type="text" name="feeling" placeholder="how are you feeling?" class="input-field w-full p-2 rounded">
+            </div>
+            <div class="mb-6">
+                <textarea name="rant" rows="4" placeholder="you can rant here if you want to" class="input-field w-full p-2 rounded"></textarea>
+            </div>
+            <button type="submit" class="button w-full p-3 rounded">compliment me</button>
+        </form>
+        <p class="text-center mt-6 text-sm opacity-70"> <a href="https://x.com/yeah__me_only" style="text-decoration: none;">Made with ❤️ by @shas232 </a></p>
+        <p class="text-center mt-2 text-sm opacity-70"><a href="https://x.com/ankitkr0" style="text-decoration: none;">Inspired by @ankitkr0</a></p>
+    </div>
+    
+</body>
+
+</html>

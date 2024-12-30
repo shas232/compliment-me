@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compliment Me</title>
+    <style>
+        /* Body Styling */
+        body {
+            background-color: #FFF0F5; /* Lavender Blush */
+            color: #708090; /* Slate Gray */
+            font-family: 'Arial', sans-serif; /* Consistent font */
+            margin: 0; /* Remove default margin */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Full viewport height */
+        }
+
+        /* Center Container */
+        .center-container {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center; /* Center horizontally */
+            justify-content: center; /* Center vertically */
+            padding: 20px; /* Add some padding for responsiveness */
+        }
+
+        /* Compliment Box */
+        .compliment-box {
+            background-color: #fce8d5; /* Peach Puff */
+            border: 2px solid #e7f3f3; /* Pale Turquoise */
+            color: #2F4F4F; /* Dark Slate Gray */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow for depth */
+            width: 100%;
+            max-width: 600px; /* Maximum width for larger screens */
+            text-align: left; /* Align text to the left */
+        }
+
+        /* Compliment Text */
+        .compliment-text {
+            font-size: 1.0em; /* Standard text size */
+            font-weight: normal; /* Regular weight */
+            line-height: 1.40; /* Improved readability */
+        }
+
+        /* Small Text */
+        .text-sm {
+            font-size: 0.8em; /* Smaller text size */
+        }
+
+        /* Button Styling */
+        .button {
+            background-color: #fce8d5; /* Peach Puff */
+            color: #2F4F4F; /* Dark Slate Gray */
+            border: none;
+            cursor: pointer;
+            opacity: 0.9;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: block; /* Block display for full width */
+            text-align: center;
+            margin: 20px 0; /* Vertical spacing */
+            width: 25%; /* Set width to 25% of container */
+            min-width: 150px; /* Minimum width for readability */
+            text-decoration: none; /* Remove underline from link */
+            transition: opacity 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+        }
+
+        .button:hover {
+            opacity: 1; /* Full opacity on hover */
+            background-color: #FFE4E1; /* Light Misty Rose for hover effect */
+        }
+        footer {
+            text-align: center; /* Center the text horizontally */
+            font-size: 1em; /* Smaller font size */
+            opacity: 1; /* Reduced opacity */
+            padding: 10px 0; /* Add some padding */
+            background-color: #FFF0F5; /* Match body background */
+            color: #708090; /* Slate Gray for consistency */
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="center-container">
+        <div class="compliment-box">
+            <p class="compliment-text">{{ compliment }}</p> <!-- Compliment Display -->
+        </div>
+        <a href="#" class="button">
+            Liked it? Take a screenshot & share it with your friends 🫶
+        </a>
+    </div>
+    <footer>
+        <p><a href="https://buymeacoffee.com/shas232" style="text-decoration: none;"> if you are a cutie, buy me a coffee ☕</a></p>
+    </footer>
+</body>
+</html>
